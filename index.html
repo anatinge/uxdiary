@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>The Ants Life</title>
+<style>
+    /* https://docs.google.com/document/d/1NFuvlyKTNDUqTxgsS0idU2fTjA-lUcS6ppPhMED9390/edit 
+    file:///Volumes/GoogleDrive/My%20Drive/Anatinge/Coding%20with%20Simon/index.html 
+    */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 125%;
+    font-size: 18px;
+    /*1em is equal to the current font size. The default text size in browsers is 16px. So, the default size of 1em is 16px. The size can be calculated from pixels to em using this formula: pixels/16=em*/
+}
+.header {
+    background-color: aquamarine;
+    background-image: url('header.jpg'); 
+    height: 600px; 
+    background-repeat: no-repeat;
+    /* The cover value tells the browser to automatically and proportionally scale the background image’s width and height so that they are always equal to, or greater than, the viewport’s width/height.*/
+    background-size: cover; 
+    background-position: center bottom;
+    }
+
+.header-text {
+    position: relative;
+    top: 40%;
+    text-align: center;
+    color: #333;
+    }
+
+.center-position {
+    position:relative; 
+    width: 80%;
+    margin-left: auto; 
+    margin-right: auto; 
+    border: 1px solid purple;} 
+
+.flex-container-about {
+    display: flex;
+    flex-direction: column;
+    height: 500px; 
+    border: red solid 1px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+button {
+    padding: 16px 32px;
+    background-color: white; 
+    font-size: 16px;
+    margin: 20px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid #333333;
+}
+
+button:hover {
+  background-color: #333333;
+  color: white;
+}
+
+.flex-container-facts {
+    display: flex;
+    flex-direction: column;
+    /* border: red solid 1px; */
+    width:33.3%;
+    align-content: center;
+}
+
+.flex-container-facts-row {
+    display: flex;
+    flex-direction: row;
+    border: red solid 1px;
+    flex-wrap: wrap;
+    
+}
+.fact-image {
+    height:200px; 
+    padding:20px; 
+    background-color: grey; 
+    margin:5px;
+}
+
+/* Create three equal columns that sits next to each other */
+.photos {
+  width:33%;
+  /* margin-right: 4px; */
+  /* border: blue solid 1px; */
+  position: relative;
+
+}
+.text-block-photo {
+  position: absolute;
+  font-size:14px;
+  bottom:20px;
+  right: 5px;
+  width: 60%;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+</style>    
+</head>
+<body>
+
+<!--HEADER-->
+    <div class="header">
+    <div class="header-text">
+        <div style="font-size: 80px;";>The Ants Reality</div>
+        <div style="font-size: 24px; padding-top: 40px;";>Simon's blog about ants</div>
+    </div>
+    </div>
+
+<!--CENTER CONTENT-->
+<div class="center-position">
+
+<!--ABOUT SIMON-->
+    <div class="flex-container-about">
+        <div> <img src="simon-coding-site.gif" alt="Simon" style="display:block; margin-left: auto; margin-right: auto; width: 150px; border-radius: 50%;"/></div>
+        <div style="padding: 20px; width: 60%; text-align: center;">Hello, my name is Simon! I love to observe ants in a little formicary
+            in my home. I fascinated by these little creatures and I created this site to show how amazing they are! Right now I am learning how to program my Raspberry PI camera so I can broadcast ants' life in real time. </br></br> To stay updated about my progress, leave your email via link below! </br> <a href="http://google.com" target="_blank"><button>Subscribe</button></a> </div>
+
+    </div>
+
+
+<!--ANTS FACTS-->
+<h1 style="padding-top: 20px;">Amazing ants facts</h1>
+<div class="flex-container-facts-row">
+    <div class="flex-container-facts">
+        <!-- <div><h2>Ants facts</h2></div> -->
+        <div class="fact-image">Image</div>
+        <div style="padding:10px;"><p>Sunt in cuur adipiscing elit,</p></div>
+        <br>
+    </div>
+    <div class="flex-container-facts">
+        <!-- <div><h2>TITLE HEADING</h2></div> -->
+        <div class="fact-image">Image</div>
+        <div style="padding:10px;"><p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p></div>
+        <br>
+    </div>
+    <div class="flex-container-facts">
+        <!-- <div><h2>TITLE HEADING</h2></div> -->
+        <div class="fact-image">Image</div>
+        <div style="padding:10px;"><p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p></div>
+        <br>
+    </div>
+    <div class="flex-container-facts">
+        <!-- <div><h2>TITLE HEADING</h2></div> -->
+        <div class="fact-image">Image</div>
+        <div style="padding:10px;"><p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p></div>
+        <br>
+    </div>
+</div> 
+ 
+<!--MY ANTS-->
+<h1 style="padding-top: 20px;">My ants</h1>
+<div style="display:flex; flex-wrap: wrap; justify-content: space-between;">
+    <div class="photos">
+       <img src="simon.jpg" style="width:100%;">
+       <div class="text-block-photo"><p>Ants taking care of their eggs.</p></div> 
+    </div>
+    <div class="photos">
+        <img src="simon.jpg" style="width:100%;"> 
+     </div>
+     <div class="photos">
+        <img src="simon.jpg" style="width:100%;"> 
+     </div>
+     <div class="photos">
+        <img src="simon.jpg" style="width:100%;"> 
+     </div>
+</div>
+
+<!-- CLOSE CENTER DIV-->
+</div> 
+
+<div style="padding: 10px; text-align: center; background: #ddd;">
+    <p>© 2020. Created by Simon</p>
+</div>
+  
+</body>
+</html>
